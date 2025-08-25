@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Projetos\\excc2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\excc2\\Personagem\\Personagem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Personagem\\Personagem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\excc2\\Personagem\\Personagem\\Models\\PersonagemRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Personagem\\Personagem\\Models\\PersonagemRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\excc2\\Personagem\\Personagem\\Services\\PersonagemServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Personagem\\Personagem\\Services\\PersonagemServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\excc2\\Personagem\\Personagem\\Models\\PersonagemRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Personagem\\Personagem\\Models\\PersonagemRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\excc2\\Personagem\\Personagem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Personagem\\Personagem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\excc2\\Personagem\\Personagem\\Controllers\\PersonagemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projetos\\excc2\\Personagem\\Personagem\\Program.cs",
               "RelativeDocumentMoniker": "Personagem\\Personagem\\Program.cs",
@@ -43,13 +43,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PersonagemRecord.cs",
               "DocumentMoniker": "C:\\Projetos\\excc2\\Personagem\\Personagem\\Models\\PersonagemRecord.cs",
               "RelativeDocumentMoniker": "Personagem\\Personagem\\Models\\PersonagemRecord.cs",
               "ToolTip": "C:\\Projetos\\excc2\\Personagem\\Personagem\\Models\\PersonagemRecord.cs",
               "RelativeToolTip": "Personagem\\Personagem\\Models\\PersonagemRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T13:27:57.086Z",
               "EditorCaption": ""
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "Personagem\\Personagem\\Services\\PersonagemServices.cs",
               "ToolTip": "C:\\Projetos\\excc2\\Personagem\\Personagem\\Services\\PersonagemServices.cs",
               "RelativeToolTip": "Personagem\\Personagem\\Services\\PersonagemServices.cs",
-              "ViewState": "AgIAAA4BAAAAAAAAAAAYwBYBAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T13:22:52.03Z",
               "EditorCaption": ""
@@ -77,8 +77,7 @@
               "RelativeToolTip": "Personagem\\Personagem\\Controllers\\PersonagemController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAFQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T13:19:03.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T13:19:03.731Z"
             },
             {
               "$type": "Bookmark",

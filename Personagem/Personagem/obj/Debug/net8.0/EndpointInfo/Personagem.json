@@ -145,6 +145,153 @@
         }
       }
     },
+    "/api/personagem/vida/{id}": {
+      "patch": {
+        "tags": [
+          "Personagem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarVidaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarVidaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarVidaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Personagem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/personagem/classe/{id}": {
+      "patch": {
+        "tags": [
+          "Personagem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarClasseDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarClasseDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarClasseDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/personagem/Atributos/{id}": {
+      "patch": {
+        "tags": [
+          "Personagem"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAtributosDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAtributosDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAtributosDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/personagem/personagens": {
       "get": {
         "tags": [
@@ -181,6 +328,62 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "is_Dead",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "forca",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "destreza",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "constituicao",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "inteligencia",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "sabedoria",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "carisma",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "responses": {
@@ -208,9 +411,101 @@
         "type": "integer",
         "format": "int32"
       },
+      "Atributos": {
+        "type": "object",
+        "properties": {
+          "forca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "destreza": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "constituicao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inteligencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sabedoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "carisma": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarAtributosDTO": {
+        "type": "object",
+        "properties": {
+          "forca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "destreza": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "constituicao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inteligencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sabedoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "carisma": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarClasseDTO": {
+        "required": [
+          "idClasse"
+        ],
+        "type": "object",
+        "properties": {
+          "idClasse": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSubClasse": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarVidaDTO": {
+        "type": "object",
+        "properties": {
+          "vida": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vidaExtra": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "PersonagemRecord": {
         "required": [
           "alinhamento",
+          "idClasse",
           "nome",
           "raca"
         ],
@@ -249,6 +544,17 @@
           "is_Dead": {
             "type": "integer",
             "format": "int32"
+          },
+          "idClasse": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSubClasse": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "atributos": {
+            "$ref": "#/components/schemas/Atributos"
           }
         },
         "additionalProperties": false

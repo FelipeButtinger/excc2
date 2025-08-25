@@ -47,15 +47,82 @@ namespace Personagem.Controllers
                 return StatusCode(500);
             }
         }
-
-
-
-        [HttpGet("personagens")]
-        public IActionResult Get(string? nome, int? nivel, int? raca, int? alinhamento)
+        [HttpPatch("vida/{id}")]
+        public IActionResult PatchVida(int id, [FromBody] AtualizarVidaDTO dto)
         {
             try
             {
-                var records = _services.GetFilter(nome, nivel, raca, alinhamento);
+                _services.PatchVida(id, dto.Vida, dto.VidaExtra);
+                return Ok("Vida Atualizada com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
+        [HttpPatch("classe/{id}")]
+        public IActionResult PatchClasse(int id, [FromBody] AtualizarClasseDTO dto)
+        {
+            try
+            {
+
+                _services.PatchClasse(id, dto.IdClasse, dto.IdSubClasse);
+                return Ok("Classe Atualizada com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
+        [HttpPatch("Atributos/{id}")]
+        public IActionResult PatchAtributos(int id, [FromBody] AtualizarAtributosDTO dto)
+        {
+            try
+            {
+                _services.PatchAtributos(id, dto.Forca, dto.Destreza, dto.Constituicao, dto.Inteligencia, dto.Sabedoria,dto.Carisma);
+                return Ok("Atributos Atualizados com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
+        [HttpGet("vida/{id}")]
+        public IActionResult GetVida(int id)
+        {
+            try
+            {
+                var record = _services.Get(id);
+                var vidaTotal = record.Vida + record.VidaExtra;
+                return Ok(new {Id = id,Nome = record.Nome, VidaBase = record.Vida, vidaExtra = record.VidaExtra, vidaTotal = vidaTotal});
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
+
+
+        [HttpGet("personagens")]
+        public IActionResult Get(
+            string? nome,
+            int? nivel,
+            int? raca,
+            int? alinhamento,
+            int? is_Dead,
+            int? forca,
+            int? destreza,
+            int? constituicao,
+            int? inteligencia,
+            int? sabedoria,
+            int? carisma
+)
+        {
+            try
+            {
+                var records = _services.GetFilter(nome, nivel, raca, alinhamento, is_Dead,
+                    forca, destreza, constituicao, inteligencia, sabedoria, carisma);
+
                 return Ok(records);
             }
             catch
