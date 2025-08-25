@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Personagem",
+    "\\Personagem\\Personagem",
+    "\\Personagem\\Personagem\\Controllers",
+    "\\Personagem\\Personagem\\Models",
+    "\\Personagem\\Personagem\\Services"
   ],
+  "SelectedNode": "\\Personagem\\Personagem\\Models\\PersonagemRecord.cs",
   "PreviewInSolutionExplorer": false
 }

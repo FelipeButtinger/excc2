@@ -8,10 +8,6 @@
 
         public required Raca Raca { get; set; }
 
-        public int ClasseId { get; set; } // FK "Classe"
-
-        public int SubClasseId { get; set; } // FK classe "SubClasse"
-
         public int Nivel { get; set; }
 
         public int Xp { get; set; }
@@ -29,8 +25,6 @@
             IdPersonagem = 0;
             Nome = "";
             Raca = Raca.HUMANO;
-            ClasseId = 0;
-            SubClasseId = 0;
             Nivel = 1;
             Xp = 0;
             Vida = 1;
@@ -40,6 +34,10 @@
         }
     }
 
+    public class ClasseRecords
+    {
+
+    }
     public enum Raca
     {
         DRACÔNICO = 0,

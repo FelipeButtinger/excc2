@@ -1,6 +1,11 @@
+using Personagem.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Esta linha permite que o meu Controller use a mesma instância da minha classe de Services sempre, sem recriar uma nova a cada requisição
+builder.Services.AddSingleton<PersonagemServices>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
